@@ -1,29 +1,7 @@
-import { createBreakpoints } from "@chakra-ui/theme-tools";
+
 
 const theme = {
-  styles: {
-    global: {
-      "html, body": {
-        fontFamily: "Inter, sans-serif",
-        bg: "base.d400",
-        color: "gray.200",
-        h: "full"
-      },
-      "#root": {
-        alignItems: "center",
-        display: "flex",
-        h: "full"
-      }
-    }
-  },
-  breakpoints: createBreakpoints({
-    xs: "30em",
-    sm: "36em",
-    md: "46.25em",
-    lg: "62.5em",
-    xl: "78.125em",
-    xxl: "95em"
-  }),
+
   colors: {
     base: {
       50: "#eceff1",
@@ -43,13 +21,7 @@ const theme = {
     }
   },
   components: {
-    Heading: {
-      baseStyle: {
-        fontFamily: "inherit",
-        fontWeight: "normal",
-        color: "inherit"
-      }
-    },
+    
     Text: {
       baseStyle: {
         fontFamily: "inherit",
@@ -58,14 +30,7 @@ const theme = {
         color: "inherit"
       }
     },
-    Button: {
-      baseStyle: {
-        textTransform: "uppercase",
-        letterSpacing: "widest",
-        fontWeight: "normal",
-        userSelect: "none"
-      }
-    }
+  
   }
 };
 

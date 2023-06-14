@@ -42,7 +42,7 @@ interface BlogAuthorProps {
 
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
     return (
-      <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
+      <HStack boxSizing='10px' marginTop="5" spacing="2" display="flex" alignItems="center">
             <Image
               borderRadius="full"
               boxSize="40px"
@@ -59,10 +59,8 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 const ArticleList = () => {
   return (
     
-    <Container maxW={'7xl'} p="12">
-      
-      <Box w="100%" h="400px" bgGradient="radial(gray.300, yellow.400, pink.200)" m={ '50'}/>
-        <Heading as="h1">Blog da Felicidade</Heading>
+    <Container maxW={'7xl'} p="36">
+       
 
       <Box
         marginTop={{ base: '1', sm: '5' }}
@@ -92,7 +90,7 @@ const ArticleList = () => {
                       
                         borderRadius="lg"
                         src={
-                          'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                          'https://ufla.br/images/noticias/2023/03_MAR/felicidade.JPG'
                         }
                         alt="some good alt text"
                         objectFit="contain"
@@ -125,7 +123,7 @@ const ArticleList = () => {
         marginTop={{ base: '3', sm: '0' }}
         >
 
-        <BlogTags tags={['Engineering', 'Product']}/>
+        <BlogTags tags={['Felicidade', 'Jornada do Cliente']}/>
 
         <Heading marginTop="1" textAlign={'left'}>
           <Link  textDecoration="none" _hover={{ textDecoration: 'none' }}>
@@ -152,7 +150,7 @@ const ArticleList = () => {
       </Box>
       </Box>
       <Heading as="h2" marginTop="10">
-        Latest articles
+        Nossa Jornada
       </Heading>
       <Divider marginTop="5" />
       <Wrap spacing="30px" marginTop="5">
@@ -163,7 +161,7 @@ const ArticleList = () => {
                 <Image
                   transform="scale(1.0)"
                   src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                    'https://ufla.br/images/noticias/2023/03_MAR/felicidade.JPG'
                   }
                   alt="some text"
                   objectFit="contain"
@@ -175,14 +173,14 @@ const ArticleList = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Felicidade', 'Jornada do Cliente']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2" textAlign={'left'}>
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Some blog title
+                Titulo Exemplo
               </Link>
             </Heading>
             <Text textAlign={'left'} as="p" fontSize="md" marginTop="2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+              texto exemplo Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
@@ -200,7 +198,7 @@ const ArticleList = () => {
                 <Image
                   transform="scale(1.0)"
                   src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                    'https://ufla.br/images/noticias/2023/03_MAR/felicidade.JPG'
                   }
                   alt="some text"
                   objectFit="contain"
@@ -212,14 +210,14 @@ const ArticleList = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3"  />
+            <BlogTags tags={['Felicidade', 'Jornada do Cliente']} marginTop="3"  />
             <Heading fontSize="xl" marginTop="2" >
               <Link textAlign={'left'} textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Some blog title
+              Titulo Exemplo
               </Link>
             </Heading>
             <Text textAlign={'left'} as="p" fontSize="md" marginTop="2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+               texto exemplo Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
@@ -237,7 +235,7 @@ const ArticleList = () => {
                 <Image
                   transform="scale(1.0)"
                   src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                    'https://ufla.br/images/noticias/2023/03_MAR/felicidade.JPG'
                   }
                   alt="some text"
                   objectFit="contain"
@@ -249,14 +247,14 @@ const ArticleList = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Felicidade', 'Jornada do Cliente']} marginTop="3" />
             <Heading textAlign={'left'} fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Some blog title
+              Titulo Exemplo
               </Link>
             </Heading>
             <Text textAlign={'left'} as="p" fontSize="md" marginTop="2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+               texto exemplo Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
@@ -269,7 +267,7 @@ const ArticleList = () => {
         </WrapItem>
       </Wrap>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Heading as="h2">What we write about</Heading>
+        <Heading as="h2">TEXTO EXEMPLO</Heading>
         <Text textAlign={'left'} as="p" fontSize="lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           condimentum quam arcu, eu tempus tortor molestie at. Vestibulum
